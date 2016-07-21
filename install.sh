@@ -1,5 +1,6 @@
 #! /bin/bash
 
+
 # Sample installation script. Adjust lines 5,15,16,17 according to system
 # and personal taste.
 
@@ -19,9 +20,9 @@ echo "Changed dir to $PWD."
 
 
 # Some needed environment variables.
-export BOOST_ROOT=/usr/local
-export Boost_NO_SYSTEM_PATHS=ON
-export ARMA_DIR=/usr
+#export BOOST_ROOT=/usr/local
+#export Boost_NO_SYSTEM_PATHS=ON
+#export ARMA_DIR=/usr
 
 # Uncomment the next line and specify the install dir for a custom user install.
 #cmake -DCMAKE_INSTALL_PREFIX=$ROOT_DIR $ROOT_DIR
