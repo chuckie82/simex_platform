@@ -16,6 +16,7 @@
 #                                                                        #
 # You should have received a copy of the GNU General Public License      #
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.  #
+# Include needed directories in sys.path.                                #
 #                                                                        #
 ##########################################################################
 
@@ -75,6 +76,7 @@ class WavePropagator(AbstractPhotonPropagator):
         srwl.SetRepresElecField(self.__wavefront._srwl_wf, 'f') # <---- switch to frequency domain
 
         # Propagate through beamline.
+	print (self.__beamline)
         self.__beamline.propagate(self.__wavefront)
 
         # Switch back to time representation.
